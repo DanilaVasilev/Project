@@ -11,7 +11,9 @@ const Profile = () => {
     useEffect(() => {
         fetch('http://localhost:3001/user')
         .then(response => response.json())
+        .then(response => response[0])
         .then(response => {
+            console.log(response)
             setBirthday(response.birthday)
             setID(response.id)
             setName(response.name)
