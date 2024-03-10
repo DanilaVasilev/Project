@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import { Link } from "react-router-dom"
 import ChatsHeader from './ChatsHeader';
 import Modal from './Modal';
 const ChatsComponent = () => {
-    const [modalActive, setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(false)
     return (
         <div>
         <ChatsHeader />
