@@ -21,7 +21,7 @@ const Profile = () => {
             setLetter(response.letter)
             setPhone(response.phone)
             setUser_type(response.user_type)  
-           
+
             })
         }, [])
     return (
